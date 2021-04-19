@@ -30,21 +30,8 @@ valet link api.jjhy.test
 
 # 查看所有links
 valet links
-```
 
-## 修改端口
-
-默认情况下，valet会代理所有*.test域名的80端口，同时限制流量必须是127.0.0.1
-
-现在修改为:
-
-```shell
-server {
- ...
- # 监听所有接口的1002端口
- listen 1002 default_server;
- ...
-}
+# 从links中查看url
 ```
 
 
@@ -60,14 +47,3 @@ valet start
 ```
 
 
-
-## 分享
-
-在项目目录执行
-
-```shell
-# 执行下面命令，会打印出可访问的域名
-valet share 
-```
-
-php artisan down --secret="163o09k1"  
