@@ -28,7 +28,7 @@ libzip-dev
 编译安装
 
 ```shell
-./configure --prefix=/mnt/d/php/php-7.4.15 \
+./configure --prefix=/home/qinchong/php/php-7.4.15 \
 --enable-fpm \
 --with-openssl \
 --enable-bcmath \
@@ -78,7 +78,7 @@ php扩展
 php -m
 # 安装扩展
 phpize
-./configure --with-php-config=/mnt/d/php/php-7.4.15/bin/php-config
+./configure --with-php-config=/home/qinchong/php/php-7.4.15/bin/php-config
 make && make install
 ```
 
@@ -86,7 +86,7 @@ make && make install
 
 ```shell
 # 安装
-curl -sS https://getcomposer.org/installer | php -- --install-dir=/mnt/d/php/composer --filename=composer
+curl -sS https://getcomposer.org/installer | php -- --install-dir=/home/qinchong/php/composer --filename=composer
 # 国内镜像
 composer config -g repo.packagist composer https://packagist.phpcomposer.com
 
